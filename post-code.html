@@ -11,9 +11,13 @@
                     height :400px;
                     width : 400px;
         }
+        paper-input {
+                    width : 400px;
+                    padding-bottom : 10px;
+        }
     </style>
 
-     <paper-input id="locationInput" ></paper-input>
+     <paper-input id="locationInput" label="Find Postal code from location" required auto-validate error-message="needs some location!"></paper-input>
      <paper-button raised on-click="setajax">Find Postal Code</paper-button>
 
       <iron-ajax
